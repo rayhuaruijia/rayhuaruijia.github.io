@@ -1,3 +1,6 @@
+* {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -10,16 +13,27 @@ body {
 
 
 .nav {
+  display: flex;
   position: sticky;
-  width: 100%;
-  top: 0;
-  left: 0;
+  width: 100vw;
   overflow: hidden;
   background-color: #333;
 }
 
+.nav h1 {
+  font-size: 30px;
+  padding-left:35px;
+  margin: left;
+}
+
+.nav h1 a {
+  color:bisque;
+  text-decoration: none;
+  color: white;
+}
+
 .nav ul {
-  display: flex;
+  display: block;
   gap: 3em;
   list-style: none;
   overflow: hidden;
@@ -28,13 +42,16 @@ body {
   transition: 0.5s;
 }
 
-.nav ul li {
+.nav li {
   display: inline-block;
+  padding: 10px 10px;
+  margin: 0 3px;
+  margin-top: 10px;
 }
 
-.nav ul li a {
+.nav li a {
   text-decoration: none;
-  color: white;
+  color:white;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   transition: 0.5s;
